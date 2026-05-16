@@ -92,7 +92,7 @@
 
 <!-- 3d content -- variable1=glbfile variable2=usdzfile variable3=alt -->
 <div class="view">
-<model-viewer src="https://cdn.glitch.me/ee52e271-b171-4a14-8d53-7ec83fb2d0ba/quadrocopter_drone_-_animated.glb?v=1685387333365" ios-src=""
+<model-viewer src="https://pub-30b27d58d9d44359a4f950a8c39d5ee2.r2.dev/quad-copter_drone.glb" ios-src=""
   poster="" ar-modes="scene-viewer quick-look webxr" shadow-intensity="1" camera-controls autoplay="true" ar>
 </model-viewer>
 </div>

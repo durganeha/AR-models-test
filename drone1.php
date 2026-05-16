@@ -98,7 +98,7 @@
 
 <!-- 3d content  variable1=glbfile variable2=usdzfile variable3=alt -->
 <div class="view">
-<model-viewer src="https://cdn.glitch.global/cc334499-a5db-4f77-9c03-a1c4110a4860/drone%20(1).glb?v=1678469805940   " ios-src=""
+<model-viewer src="https://pub-30b27d58d9d44359a4f950a8c39d5ee2.r2.dev/drone.glb" ios-src=""
   poster="" ar-modes="scene-viewer quick-look webxr" shadow-intensity="1" camera-controls="auto"   autoplay="true" ar>
 </model-viewer>
 </div>
