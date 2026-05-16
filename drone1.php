@@ -98,8 +98,14 @@
 
 <!-- 3d content  variable1=glbfile variable2=usdzfile variable3=alt -->
 <div class="view">
-<model-viewer src="https://pub-30b27d58d9d44359a4f950a8c39d5ee2.r2.dev/drone.glb" ios-src=""
-  poster="" ar-modes="scene-viewer quick-look webxr" shadow-intensity="1" camera-controls="auto"   autoplay="true" ar>
+<model-viewer
+    src="https://pub-30b27d58d9d44359a4f950a8c39d5ee2.r2.dev/drone.glb"
+    ar
+    ar-modes="scene-viewer quick-look webxr"
+    camera-controls
+    auto-rotate
+    shadow-intensity="1"
+    style="width: 100%; height: 500px;">
 </model-viewer>
 </div>
 &nbsp;
@@ -175,9 +181,9 @@ padding:20px;">
       <div class="modal-header">
       <h3 class="text-primary" style="text-align: center; margin: auto;"><b>Scan through mobile </b></h3> 
       </div>
-      <div class="modal-body">
-          <img src="img/drone1.png" class="img-fluid" alt="Responsive image">
-      </div>
+      <div class="modal-body text-center">
+    <div id="qrcode"></div>
+</div>
       <div class="modal-footer">
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
           Close
@@ -236,6 +242,29 @@ margin-right: auto; margin-left: 10%; margin-right: 10%;">
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const qrButton = document.querySelector('[data-target="#exampleModalCenter"]');
+
+    qrButton.addEventListener("click", function () {
+
+        // Clear old QR
+        document.getElementById("qrcode").innerHTML = "";
+
+        // URL of THIS page
+        const currentPageURL = window.location.href;
+
+        // Generate QR
+        new QRCode(document.getElementById("qrcode"), {
+            text: currentPageURL,
+            width: 220,
+            height: 220
+        });
+    });
+});
+</script>
 </body>
 
 </html>
