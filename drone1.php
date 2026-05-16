@@ -98,14 +98,8 @@
 
 <!-- 3d content  variable1=glbfile variable2=usdzfile variable3=alt -->
 <div class="view">
-<model-viewer
-    src="https://pub-30b27d58d9d44359a4f950a8c39d5ee2.r2.dev/drone.glb"
-    ar
-    ar-modes="scene-viewer quick-look webxr"
-    camera-controls
-    auto-rotate
-    shadow-intensity="1"
-    style="width: 100%; height: 500px;">
+<model-viewer src="https://pub-30b27d58d9d44359a4f950a8c39d5ee2.r2.dev/drone.glb" ios-src=""
+  poster="" ar-modes="scene-viewer quick-look webxr" shadow-intensity="1" camera-controls="auto"   autoplay="true" ar>
 </model-viewer>
 </div>
 &nbsp;
@@ -243,6 +237,7 @@ margin-right: auto; margin-left: 10%; margin-right: 10%;">
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+
     <script>
 document.addEventListener("DOMContentLoaded", function () {
 
